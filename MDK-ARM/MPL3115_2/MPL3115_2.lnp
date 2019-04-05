@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"mpl3115_2\startup_stm32f103xb.o"
+"mpl3115_2\system_stm32f1xx.o"
+"mpl3115_2\stm32f1xx_hal_pwr.o"
+"mpl3115_2\stm32f1xx_hal_flash_ex.o"
+"mpl3115_2\stm32f1xx_hal_gpio_ex.o"
+"mpl3115_2\stm32f1xx_hal_tim.o"
+"mpl3115_2\stm32f1xx_hal_rcc.o"
+"mpl3115_2\stm32f1xx_hal_cortex.o"
+"mpl3115_2\stm32f1xx_hal_dma.o"
+"mpl3115_2\stm32f1xx_hal_tim_ex.o"
+"mpl3115_2\stm32f1xx_hal_flash.o"
+"mpl3115_2\stm32f1xx_hal.o"
+"mpl3115_2\stm32f1xx_hal_rcc_ex.o"
+"mpl3115_2\stm32f1xx_hal_i2c.o"
+"mpl3115_2\stm32f1xx_hal_gpio.o"
+"mpl3115_2\stm32f1xx_hal_msp.o"
+"mpl3115_2\stm32f1xx_it.o"
+"mpl3115_2\main.o"
+--library_type=microlib --strict --scatter "MPL3115_2\MPL3115_2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MPL3115_2.map" -o MPL3115_2\MPL3115_2.axf
